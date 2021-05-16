@@ -2,10 +2,12 @@
 # Flutter-Web-UI-Menu-Table
 A Flutter2.0 version of the Web UI background frame that displays a console dashboard table histogram pie chart.
 # Control Panel UI
-![Control Panel](https://user-images.githubusercontent.com/15648865/118395412-f3f43580-b67c-11eb-8481-eff73bf03a5e.jpg)
+<img width="2008" alt="Control Panel Web UI" src="https://user-images.githubusercontent.com/15648865/118397734-10499f80-b688-11eb-92d7-933129614824.png">
+
 
 # Dashboard UI
-<img width="1941" alt="截屏2021-05-16 下午7 31 18" src="https://user-images.githubusercontent.com/15648865/118395495-4afa0a80-b67d-11eb-9243-fdaa1398959c.png">
+<img width="2004" alt="Dashboard UI" src="https://user-images.githubusercontent.com/15648865/118397782-50a91d80-b688-11eb-9ef0-cf99f4299b3c.png">
+
 
 # Inspiration and Learning
 
