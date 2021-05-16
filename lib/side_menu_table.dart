@@ -38,13 +38,13 @@ class SideMenuTable extends StatelessWidget {
                       SizedBox(height: defaultPadding * 0.4),
 
                       Text(
-                        'Argus AI Camera',
+                        'Grand Vision AI',
                         style: TextStyle(fontSize: 26, color: Colors.blue),
                       ),
                       SizedBox(height: defaultPadding * 0.4),
 
                       Text(
-                        'Argus Technology',
+                        'GrandVision Technology',
                         style: TextStyle(fontSize: 14, color: Colors.white),
                       ),
                     ],
