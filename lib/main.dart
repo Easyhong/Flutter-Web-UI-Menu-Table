@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Web UI Menu Table',
       theme: ThemeData.dark().copyWith(
-        scaffoldBackgroundColor: bgColor,
+        scaffoldBackgroundColor: Color(0xFFF5F6F7),
         highlightColor: Colors.transparent,
         splashColor: Colors.transparent,
 

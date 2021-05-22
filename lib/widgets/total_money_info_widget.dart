@@ -16,7 +16,7 @@ class TotalMoneyInfoWidget extends StatelessWidget {
     return Container(
       padding: EdgeInsets.all(defaultPadding),
       decoration: BoxDecoration(
-        color: secondaryColor.withOpacity(0.3),
+        color: secondaryColor.withOpacity(0.9),
         borderRadius: const BorderRadius.all(Radius.circular(10)),
       ),
       child: Column(

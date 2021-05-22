@@ -32,7 +32,7 @@ class ControlPanelPage extends StatelessWidget {
             ),
           ),
 
-          SizedBox(height: defaultPadding),
+          SizedBox(height: defaultPadding / 2),
           // line 2
           Row(
             crossAxisAlignment: CrossAxisAlignment.center,
@@ -44,7 +44,7 @@ class ControlPanelPage extends StatelessWidget {
                   child: Container(
                     padding: EdgeInsets.all(defaultPadding),
                     decoration: BoxDecoration(
-                      color: secondaryColor.withOpacity(0.3),
+                      color: secondaryColor.withOpacity(0.9),
                       borderRadius: const BorderRadius.all(Radius.circular(10)),
                     ),
                     // gas station info widget
@@ -72,7 +72,7 @@ class ControlPanelPage extends StatelessWidget {
           Container(
             padding: EdgeInsets.all(defaultPadding),
             decoration: BoxDecoration(
-              color: secondaryColor.withOpacity(0.3),
+              color: secondaryColor.withOpacity(0.9),
               borderRadius: const BorderRadius.all(Radius.circular(10)),
             ),
             child: OliInfoCardGridViewWidget(
@@ -95,7 +95,7 @@ class ControlPanelPage extends StatelessWidget {
                   child: Container(
                       padding: EdgeInsets.all(defaultPadding),
                       decoration: BoxDecoration(
-                        color: secondaryColor.withOpacity(0.3),
+                        color: secondaryColor.withOpacity(0.9),
                         borderRadius:
                             const BorderRadius.all(Radius.circular(10)),
                       ),

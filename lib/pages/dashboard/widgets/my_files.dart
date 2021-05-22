@@ -23,7 +23,7 @@ class MyFiles extends StatelessWidget {
           children: [
             Text(
               title,
-              style: Theme.of(context).textTheme.subtitle1,
+              style: TextStyle(fontSize: 20, color: bgColor),
             ),
             ElevatedButton.icon(
               style: TextButton.styleFrom(
