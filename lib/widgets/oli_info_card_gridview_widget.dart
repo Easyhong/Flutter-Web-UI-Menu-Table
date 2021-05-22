@@ -25,7 +25,7 @@ class OliInfoCardGridViewWidget extends StatelessWidget {
       children: <Widget>[
         Text(
           title,
-          style: Theme.of(context).textTheme.subtitle1,
+          style: TextStyle(color: bgColor, fontSize: 18),
         ),
         SizedBox(height: defaultPadding),
         GridView.builder(

@@ -16,7 +16,7 @@ class TotalMoneyInfoWidget extends StatelessWidget {
     return Container(
       padding: EdgeInsets.all(defaultPadding),
       decoration: BoxDecoration(
-        color: secondaryColor.withOpacity(0.9),
+        color: Colors.white,
         borderRadius: const BorderRadius.all(Radius.circular(10)),
       ),
       child: Column(
@@ -27,7 +27,7 @@ class TotalMoneyInfoWidget extends StatelessWidget {
             height: 40,
             width: 40,
             decoration: BoxDecoration(
-              color: info.color.withOpacity(0.1),
+              color: info.color,
               borderRadius: const BorderRadius.all(Radius.circular(10)),
             ),
             child: SvgPicture.asset(
@@ -41,20 +41,20 @@ class TotalMoneyInfoWidget extends StatelessWidget {
             style: Theme.of(context)
                 .textTheme
                 .caption
-                .copyWith(color: Colors.white, fontSize: 28),
+                .copyWith(color: bgColor, fontSize: 28),
           ),
           SizedBox(height: 6),
           Text(
             info.title,
             maxLines: 1,
             overflow: TextOverflow.ellipsis,
-            style: TextStyle(fontSize: 18),
+            style: TextStyle(fontSize: 18, color: bgColor),
           ),
           SizedBox(height: 6),
           Container(
             padding: EdgeInsets.all(defaultPadding),
             decoration: BoxDecoration(
-              color: secondaryColor,
+              color: Colors.white,
               borderRadius: const BorderRadius.all(Radius.circular(10)),
             ),
             child: Column(
@@ -125,17 +125,13 @@ class TotalItemWidget extends StatelessWidget {
             '${info.shopName}',
             textAlign: TextAlign.left,
             style: TextStyle(
-                fontSize: 16,
-                fontWeight: FontWeight.bold,
-                color: Colors.white70),
+                fontSize: 16, fontWeight: FontWeight.bold, color: bgColor),
           ),
           Text(
             '${info.totalMoney}',
             textAlign: TextAlign.left,
             style: TextStyle(
-                fontSize: 16,
-                fontWeight: FontWeight.bold,
-                color: Colors.white70),
+                fontSize: 16, fontWeight: FontWeight.bold, color: bgColor),
           ),
         ],
       ),

@@ -18,7 +18,7 @@ class RecentFiles extends StatelessWidget {
     return Container(
       padding: EdgeInsets.all(defaultPadding),
       decoration: BoxDecoration(
-        color: secondaryColor,
+        color: Colors.white,
         borderRadius: const BorderRadius.all(Radius.circular(10)),
       ),
       child: Column(
@@ -26,7 +26,7 @@ class RecentFiles extends StatelessWidget {
         children: [
           Text(
             title,
-            style: Theme.of(context).textTheme.subtitle1,
+            style: TextStyle(color: bgColor, fontSize: 18),
           ),
           SizedBox(
             width: double.infinity,
@@ -35,13 +35,22 @@ class RecentFiles extends StatelessWidget {
               columnSpacing: defaultPadding,
               columns: [
                 DataColumn(
-                  label: Text("File Name"),
+                  label: Text(
+                    "File Name",
+                    style: TextStyle(color: bgColor, fontSize: 14),
+                  ),
                 ),
                 DataColumn(
-                  label: Text("Date"),
+                  label: Text(
+                    "Date",
+                    style: TextStyle(color: bgColor, fontSize: 14),
+                  ),
                 ),
                 DataColumn(
-                  label: Text("Size"),
+                  label: Text(
+                    "Size",
+                    style: TextStyle(color: bgColor, fontSize: 14),
+                  ),
                 ),
               ],
               rows: List.generate(
@@ -69,13 +78,22 @@ DataRow recentFileDataRow(RecentFile fileInfo) {
             ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: defaultPadding),
-              child: Text(fileInfo.title),
+              child: Text(
+                fileInfo.title,
+                style: TextStyle(color: bgColor, fontSize: 14),
+              ),
             ),
           ],
         ),
       ),
-      DataCell(Text(fileInfo.date)),
-      DataCell(Text(fileInfo.size)),
+      DataCell(Text(
+        fileInfo.date,
+        style: TextStyle(color: bgColor, fontSize: 14),
+      )),
+      DataCell(Text(
+        fileInfo.size,
+        style: TextStyle(color: bgColor, fontSize: 14),
+      )),
     ],
   );
 }

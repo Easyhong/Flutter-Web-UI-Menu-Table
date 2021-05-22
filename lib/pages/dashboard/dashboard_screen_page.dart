@@ -26,7 +26,16 @@ class DashboardScreenPage extends StatelessWidget {
                 flex: 5,
                 child: Column(
                   children: [
-                    MyFiles(title: 'Angelina Join File'),
+                    Container(
+                      padding: EdgeInsets.all(defaultPadding),
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius:
+                            const BorderRadius.all(Radius.circular(10)),
+                      ),
+                      // gas station info widget
+                      child: MyFiles(title: 'Angelina Join File'),
+                    ),
                     SizedBox(height: defaultPadding),
                     RecentFiles(title: "Recent Files"),
                     if (Responsive.isMobile(context))

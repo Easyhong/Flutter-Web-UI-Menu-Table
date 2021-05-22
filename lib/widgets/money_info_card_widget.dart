@@ -17,7 +17,7 @@ class MoneyInfoCardWidget extends StatelessWidget {
     return Container(
       padding: EdgeInsets.all(defaultPadding),
       decoration: BoxDecoration(
-        color: secondaryColor,
+        color: Colors.white,
         borderRadius: const BorderRadius.all(Radius.circular(10)),
       ),
       child: Row(
@@ -32,7 +32,7 @@ class MoneyInfoCardWidget extends StatelessWidget {
                 info.title,
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
-                style: TextStyle(fontSize: 20),
+                style: TextStyle(fontSize: 20, color: bgColor),
               ),
               SizedBox(height: 0),
               Text(

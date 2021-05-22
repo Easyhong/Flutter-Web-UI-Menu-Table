@@ -22,7 +22,7 @@ class GasStationInfoWidget extends StatelessWidget {
           children: [
             Text(
               title,
-              style: Theme.of(context).textTheme.subtitle1,
+              style: TextStyle(color: bgColor, fontSize: 18),
             ),
           ],
         ),

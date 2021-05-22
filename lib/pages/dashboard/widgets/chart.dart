@@ -30,12 +30,15 @@ class Chart extends StatelessWidget {
                 Text(
                   "29.1",
                   style: Theme.of(context).textTheme.headline4.copyWith(
-                        color: Colors.white,
+                        color: bgColor,
                         fontWeight: FontWeight.w600,
                         height: 0.5,
                       ),
                 ),
-                Text("of 128GB")
+                Text(
+                  "of 128GB",
+                  style: TextStyle(color: bgColor),
+                )
               ],
             ),
           ),

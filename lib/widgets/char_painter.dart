@@ -20,7 +20,7 @@ class ChartPainter extends CustomPainter {
 
     // 使用 Paint 定义路径的样式
     final Paint _paint = Paint()
-      ..color = Colors.white70
+      ..color = Colors.black54
       ..style = PaintingStyle.stroke
       ..strokeWidth = 2
       ..isAntiAlias = true;
@@ -61,7 +61,7 @@ class ChartPainter extends CustomPainter {
     final double labelFontSize = 14.0;
 
     Paint paint = Paint()
-      ..color = Colors.white70
+      ..color = Colors.black54
       ..strokeWidth = 2.0;
 
     // 使用 50.0 为间隔绘制比传入数据多一个的标识
@@ -87,7 +87,7 @@ class ChartPainter extends CustomPainter {
         TextPainter(
           text: TextSpan(
             text: label.toStringAsFixed(0),
-            style: TextStyle(fontSize: labelFontSize, color: Colors.white70),
+            style: TextStyle(fontSize: labelFontSize, color: Colors.black54),
           ),
           textAlign: TextAlign.right,
           textDirection: TextDirection.rtl,
@@ -161,7 +161,7 @@ class ChartPainter extends CustomPainter {
         textAlign: TextAlign.center,
         text: TextSpan(
           text: '$xData',
-          style: TextStyle(fontSize: 12, color: Colors.white70),
+          style: TextStyle(fontSize: 12, color: Colors.black54),
         ),
         textDirection: TextDirection.ltr,
       )

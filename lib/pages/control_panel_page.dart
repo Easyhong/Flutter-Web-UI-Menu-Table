@@ -44,7 +44,7 @@ class ControlPanelPage extends StatelessWidget {
                   child: Container(
                     padding: EdgeInsets.all(defaultPadding),
                     decoration: BoxDecoration(
-                      color: secondaryColor.withOpacity(0.9),
+                      color: Colors.white,
                       borderRadius: const BorderRadius.all(Radius.circular(10)),
                     ),
                     // gas station info widget
@@ -72,7 +72,7 @@ class ControlPanelPage extends StatelessWidget {
           Container(
             padding: EdgeInsets.all(defaultPadding),
             decoration: BoxDecoration(
-              color: secondaryColor.withOpacity(0.9),
+              color: Colors.white,
               borderRadius: const BorderRadius.all(Radius.circular(10)),
             ),
             child: OliInfoCardGridViewWidget(
@@ -95,7 +95,7 @@ class ControlPanelPage extends StatelessWidget {
                   child: Container(
                       padding: EdgeInsets.all(defaultPadding),
                       decoration: BoxDecoration(
-                        color: secondaryColor.withOpacity(0.9),
+                        color: Colors.white,
                         borderRadius:
                             const BorderRadius.all(Radius.circular(10)),
                       ),
@@ -106,7 +106,7 @@ class ControlPanelPage extends StatelessWidget {
                         children: <Widget>[
                           Text(
                             'Chart Oli',
-                            style: Theme.of(context).textTheme.subtitle1,
+                            style: TextStyle(color: bgColor, fontSize: 18),
                           ),
                           BarChart(yValues: [
                             156,
@@ -135,7 +135,7 @@ class ControlPanelPage extends StatelessWidget {
                 child: Container(
                   padding: EdgeInsets.all(defaultPadding),
                   decoration: BoxDecoration(
-                    color: secondaryColor.withOpacity(0.6),
+                    color: Colors.white,
                     borderRadius: const BorderRadius.all(Radius.circular(10)),
                   ),
                   child: Column(
